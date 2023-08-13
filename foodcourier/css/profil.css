@@ -1,0 +1,18 @@
+.card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card-header, .card-body {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#pwmodbutton {
+    margin-bottom: 5px;
+}
+
+.content {
+    padding-top: 10%;
+
+}

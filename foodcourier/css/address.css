@@ -1,0 +1,48 @@
+#curr-address > p{
+    font-weight: bold !important;
+}
+
+.card {
+    text-align: left;
+    margin-top: 5%;
+}
+
+#navigationicon {
+    margin: auto !important;
+    max-width: 15%;
+}
+
+#navigation-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black !important;
+}
+
+h5 {
+    margin: 5px;
+}
+
+p {
+    text-align: left;
+}
+
+#current-address {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    overflow: scroll;
+}
+
+#pickup {
+    height: 50px;
+    width: 90%;
+    font-size: 20px;
+}
+
+#done {
+    height: 50px;
+    width: 90%;
+    font-size: 20px;
+}

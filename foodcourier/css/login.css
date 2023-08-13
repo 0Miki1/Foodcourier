@@ -1,0 +1,8 @@
+#status > p{
+    font-weight: bold !important;
+}
+
+#allfieldsrequired {
+    display: none;
+}
+

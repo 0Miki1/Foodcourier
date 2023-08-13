@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCvrON5AS4aSRxJcSbnszCA1NUWTGF00U&callback=initMapAddress"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/checklogin.js"></script>
+    <script src="js/terkep.js"></script>
+    <script src="js/navbar.js"></script>
+    <title>Courier app</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="availability">
+          <p id="availability-text"></p>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="navbar-status">Státusz</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="map"></div>
+  <div id="cimadat">
+    <h3>Új kiszállítás</h3>
+    <p style="margin-bottom: 2px;"><img src="https://maps.google.com/mapfiles/kml/pal2/icon32.png" alt="Étterem:">: </p>
+    <p><img src="https://maps.google.com/mapfiles/kml/pal2/icon8.png" alt="Megrendelő:">: </p>
+    <button class="btn btn-primary btn-lg btn-block w-100 mt-2" type="button" id="confirmaddress">Elfogadás</button>
+  </div>
+  <div class="alert alert-danger alert-dismissible fade" role="alert" id="loginerror">
+    <div></div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div id="controls">
+    <div class="control-element" id="status">
+      <img src="imgs/icon_house.png" alt="house">
+      <p>Státusz</p>
+    </div>
+    <div class="control-element" id="curr-address">
+      <img src="imgs/icon_bell.png" alt="bell">
+      <p>Aktuális cím</p>
+    </div>
+    <div class="control-element" id="map-icon">
+      <img src="imgs/icon_map.png" alt="Térkép">
+      <p>Térkép</p>
+    </div>
+    <div class="control-element" id="previous">
+      <img src="imgs/icon_done.png" alt="Előző címek">
+      <p>Előző címek</p>
+    </div>
+  </div>
+</body>
+</html>

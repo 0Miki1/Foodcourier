@@ -1,0 +1,106 @@
+html, body{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+    height: 86%;
+    width: 100%;
+    border-top: 3px solid gray;
+}
+
+#fejlec{
+  border-bottom: 3px solid grey;
+  width: 100%;
+  height: 8%;
+}
+
+#menu-cont{
+  width: 40px;
+  height: 40px;
+  margin-left: 5%;
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(177, 177, 177);
+  border-radius: 100px;
+}
+
+.line{
+  width: 60%;
+  background-color: black;
+  height: 10%;
+  border-radius: 2px;
+}
+
+#availability{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-right: 5%;
+}
+
+#availability > p{
+  margin: 0px;
+  font-size: 18px;
+}
+
+#availability > img{
+  width: 100%;
+  height: 100%;
+}
+
+#controls{
+  position: fixed;
+  background-color: rgb(177, 177, 177);
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  height: 8%;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60px;
+}
+
+.control-element{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+  height: 100%;
+  text-align: center;
+}
+
+.control-element > p{
+  margin: 1px;
+}
+
+.gm-style-cc {
+  display: none;
+}
+
+.content{
+  height: 95%;
+  border-top: 3px solid grey;
+  padding-top: 15%;
+}
+
+.alert{
+  bottom: 10%;
+}

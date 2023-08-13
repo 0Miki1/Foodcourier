@@ -1,0 +1,19 @@
+#previous > p{
+    font-weight: bold !important;
+}
+
+#recentadds {
+    padding: 4%;
+    padding-bottom: 30px;
+    overflow: scroll !important;
+}
+
+#list {
+    margin-top: 5%;
+    padding-bottom: 20px;
+}
+
+#history {
+    width: 8%;
+    height: auto;
+}
